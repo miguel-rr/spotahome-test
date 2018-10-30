@@ -1,0 +1,36 @@
+.header-wrapper {
+  position: relative;
+  height: calc(@header-height - @box-shadow-height);
+  box-shadow: 0px @box-shadow-height @box-shadow-height 0px rgba(170,170,170,0.8);
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 120px;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      li {
+        align-items: center;
+        flex-direction: row;
+        margin: 0 16px;
+        a {
+          padding: 10px 15px;
+          color: @link-color;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
