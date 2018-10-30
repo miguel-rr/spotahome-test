@@ -1,0 +1,7 @@
+[
+  ["home", "/", "index"],
+  ["rooms", "/rooms/:city?"],
+  ["company", "/company"],
+  ["about", "/about"],
+  ["contact", "/contact"]
+]

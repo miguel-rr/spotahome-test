@@ -1,0 +1,33 @@
+.filters-wrapper {
+  background-color: @light-grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: calc(100vh - @header-height);
+  overflow: hidden;
+  position: relative;
+  width: 25%;
+  box-shadow: @box-shadow-height 0px @box-shadow-height 0px rgba(170,170,170,0.8);
+  text-align: center;
+  .section-title {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .filter {
+    padding: 10px;
+    label {
+      display: block;
+      padding: 0px 0px 5px;
+    }
+  }
+  .json {
+    margin: 10px 0px;
+    button {
+      background-color: @secondary-main;
+      color: @white;
+      &:hover {
+        background-color: @secondary-main-hover;
+      }
+    }
+  }
+}
